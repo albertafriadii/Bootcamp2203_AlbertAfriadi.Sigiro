@@ -1,1 +1,0 @@
-test.txt hanya berisi teks saja.
