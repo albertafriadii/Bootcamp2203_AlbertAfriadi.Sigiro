@@ -1,3 +1,3 @@
-var $namaDepan = "Albert Afriadi";
-var $namaBelakang = "Sigiro"
-console.info($namaDepan + " " + $namaBelakang);
+var namaLengkap = "Albert Afriadi Sigiro";
+var info = "Hai, perkenalkan nama saya " + namaLengkap + ", salam kenal";
+console.log(info);
