@@ -1,3 +1,4 @@
+// readline library
 var readlineSync = require('readline-sync');
 
 // user memasukkan nama
