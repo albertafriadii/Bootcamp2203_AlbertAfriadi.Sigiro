@@ -1,0 +1,16 @@
+{
+  "name": "pertemuan3_npmtugas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "fol": "ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Albert Afriadi Sigiro",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}
