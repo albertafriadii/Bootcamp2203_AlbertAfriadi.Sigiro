@@ -9,11 +9,11 @@ const rl = readline.createInterface({
 
 const tanyaNama = () => {
     return new Promise((resolve) => {
-        rl.question('Siapa nama anda?\n', nama => {
+        rl.question('Siapa nama anda? ', nama => {
             if(nama){
                 resolve(nama);
             } else {
-                console.log('Nama tidak boleh kosong!');
+                console.log('Nama tidak boleh kosong!\n');
                 resolve(tanyaNama());
             }
         });
@@ -22,9 +22,9 @@ const tanyaNama = () => {
 
 const tanyaEmail = () => {
     return new Promise((resolve) => {
-        rl.question('Apa alamat email anda?\n', email => {
+        rl.question('Apa alamat email anda? ', email => {
             if(!validator.isEmail(email)){
-                console.log('Email yang anda masukkan salah!');
+                console.log('Email yang anda masukkan salah!\n');
                 resolve(tanyaEmail());
             } else {
                 resolve(email);
@@ -35,9 +35,9 @@ const tanyaEmail = () => {
 
 const tanyaMobile = () => {
     return new Promise((resolve) => {
-        rl.question('Berapa nomor handphone anda?\n', mobile => {
-            if (!validator.isMobilePhone(mobile)) {
-                console.log('Nomor yang dimasukkan salah!');
+        rl.question('Berapa nomor handphone anda? ', mobile => {
+            if (!validator.isMobilePhone(mobile,'id-ID')) {
+                console.log('Nomor yang dimasukkan salah!\n');
                 resolve(tanyaMobile());
             } else {
                 resolve(mobile);
