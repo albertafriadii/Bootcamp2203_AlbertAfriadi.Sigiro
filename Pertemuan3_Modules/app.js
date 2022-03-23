@@ -1,5 +1,5 @@
 // Variable fs
-const fs = require('fs');
+// const fs = require('fs');
 // memasukkan string ke dalam file
 // fs.writeFileSync("test.txt", "Hello world");
 
