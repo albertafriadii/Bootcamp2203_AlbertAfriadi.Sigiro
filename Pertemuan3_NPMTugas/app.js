@@ -7,15 +7,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// rl.question('Siapa nama anda? ', (nama) => {
-//     rl.question('Berapa nomor handphone anda? ', (nomorHandphone) => {
-//         rl.question('Apa alamat email anda? ', (email) => {
-//             console.log(`Halo ${nama}, nomor handphone anda ${nomorHandphone} dan alamat email anda adalah ${email}`);
-//             rl.close();
-//         });
-//     });
-// });
-
 const tanyaNama = () => {
     return new Promise((resolve) => {
         rl.question('Siapa nama anda?\n', nama => {
