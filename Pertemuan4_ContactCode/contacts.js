@@ -1,4 +1,6 @@
+// inisialisasi file system module
 const fs = require('fs');
+// inisialisai readline module
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -6,6 +8,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+// membuat fungsi questions agar bisa dipake banyak question
 const questions = (ask) => {
     return new Promise((resolve, reject) => {
         rl.question(ask, (inputVariable) => {
@@ -14,6 +17,7 @@ const questions = (ask) => {
     });
 };
 
+// membuat fungsi save contact pada app.js
 const saveContact = (name, mobile, email) => {
 
     const contact = {name, mobile, email};
@@ -33,4 +37,5 @@ const saveContact = (name, mobile, email) => {
     rl.close();
 }
 
+// membuat export beberapa fungsi ke app.js
 module.exports = {questions, saveContact};

@@ -63,6 +63,7 @@
 // //     });
 // // });
 
+// inisialisasi contact.js
 const contacts = require('./contacts');
 
 const main = async () => {
@@ -73,4 +74,5 @@ const main = async () => {
     contacts.saveContact(name, email, mobile);
 };
 
+// memanggil fungsi main dan menampilkan
 main();
