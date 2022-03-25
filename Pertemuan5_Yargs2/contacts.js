@@ -116,6 +116,7 @@ const deleteContact = (name) => {
     const deleted = contacts.filter((contact) => contact.name !== name);
     if(contacts.length === deleted.length){
         console.log('Data tidak ada!');
+        return false;
     }
 
     fs.writeFileSync('data/contacts.json', JSON.stringify(deleted));
