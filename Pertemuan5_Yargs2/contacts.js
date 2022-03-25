@@ -106,17 +106,20 @@ const detailContact = (name) => {
     if(detail){
             console.log(`${detail.name} \n ${detail.email} \n ${detail.mobile}`);
     } else {
-        console.log('Nama tidak ada!');    }
+        console.log('Nama tidak ada!');    
+    }
 }
 
 // function untuk delete data contact
 const deleteContact = (name) => {
     const contacts = loadContact();
-    const remove = contacts.find((contact) => contact.name === name);
-    if(remove){
-        delete remove;
-        console.log('Data sudah terhapus!');
+    const deleted = contacts.filter((contact) => contact.name !== name);
+    if(contacts.length === deleted.length){
+        console.log('Data tidak ada!');
     }
+
+    fs.writeFileSync('data/contacts.json', JSON.stringify(deleted));
+    console.log('Data sudah terhapus!');
 }
 
 // membuat export beberapa fungsi ke app.js

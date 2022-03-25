@@ -74,8 +74,8 @@ yargs.command({
             type: 'string', //tipe data
         },
     },
-    handler(){
-        contacts.deleteContact();
+    handler(argv){
+        contacts.deleteContact(argv.name);
     }, 
 });
 
