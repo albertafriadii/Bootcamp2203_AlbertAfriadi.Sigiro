@@ -57,9 +57,11 @@ const saveContact = (name, email, mobile) => {
     }
 
     // validasi email
-    if(email != "" && !validator.isEmail(email)){
-        console.log('Invalid email!');
-        return false;
+    if(email){
+        if(!validator.isEmail(email)){
+            console.log('Invalid email!');
+            return false;
+        }
     }
 
     // validasi mobile
