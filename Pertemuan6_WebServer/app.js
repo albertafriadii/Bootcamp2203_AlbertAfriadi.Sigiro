@@ -17,7 +17,7 @@ http
         } else if (url === '/contact') {
             read.readHtml('./contact.html', res);
         } else {
-            read.readHtml('./index.html',res);
+            read.readHtml('./index.html', res);
         }
     })
     .listen(3000,() => { //port untuk listening server
