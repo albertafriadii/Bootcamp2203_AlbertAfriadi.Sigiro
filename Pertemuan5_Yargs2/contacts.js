@@ -103,11 +103,14 @@ const listContact = () => {
 const detailContact = (name) => {
     const contacts = loadContact();
     const detail = contacts.find((contact) => contact.name === name);
-    if(detail){
-            console.log(`${detail.name} \n ${detail.email} \n ${detail.mobile}`);
-    } else {
+    if(!detail){
         console.log('Nama tidak ada!');    
     }
+    console.log(`${detail.name}`);
+    if(contact.email){
+        console.log(`${detail.email}`);
+    }
+    console.log(`${detail.mobile}`);
 }
 
 // function untuk delete data contact
