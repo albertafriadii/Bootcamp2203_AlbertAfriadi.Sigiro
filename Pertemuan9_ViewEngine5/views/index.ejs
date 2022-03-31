@@ -1,0 +1,17 @@
+<h1>Web Sever Node.Js</h1>
+<p>Welcome to my page <%= author %> </p> <!-- menampilkan variabel -->
+
+<h2>Contact List</h2>
+<% if (cont.length > 0) { %> 
+    <% cont.forEach((cont) => { %>
+        <li>
+            Nama : <%= cont.name %> 
+        </li>
+        <li>
+            Email : <%= cont.email %>
+        </li>
+        <br>
+    <% }); %>
+<% } else { %>
+    <p>No contact uploaded</p>
+<% } %> 
