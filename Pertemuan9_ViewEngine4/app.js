@@ -23,7 +23,7 @@ app.get('/', (req, res) => {    // routing page
     ]
     
     const author = "Albert Afriadi Sigiro"
-    res.locals.title = "Home"
+    res.locals.title = "Home"       // menampilkan title
     res.render('index', {
         cont,
         author: author,
@@ -31,12 +31,12 @@ app.get('/', (req, res) => {    // routing page
 })
 
 app.get('/about', (req, res) => {   // routing page
-    res.locals.title = "About"
+    res.locals.title = "About"      // menampilkan title
     res.render('about')   // response untuk dikembalikan ke client
 })
 
 app.get('/contact', (req, res) => {     // routing page
-    res.locals.title = "Contact"
+    res.locals.title = "Contact"        // menampilkan title
     res.render('contact')     // response untuk dikembalikan ke client
 })
 
