@@ -1,6 +1,6 @@
 Bagian Home {
 
-    Time: 1648786380305 => menampilkan waktu dari 1 Januari 1970 s/d sekarang dengan detik(second)
+    Time: 1648786380305 => menampilkan waktu dari 1 Januari 1970 s/d saat website dijalankan dengan detik(second)
 
     GET / 304 3.197 ms - -
         1. GET merupakan method yang mengambil data dari URL 
@@ -17,7 +17,7 @@ Bagian Home {
 
 Bagian About{
 
-    Time: 1648786392189 => menampilkan waktu dari 1 Januari 1970 s/d sekarang dengan detik(second)
+    Time: 1648786392189 => menampilkan waktu dari 1 Januari 1970 s/d saat website dijalankan dengan detik(second)
     
     GET /about/ 304 6.455 ms - -
         1. GET merupakan method yang mengambil data dari URL 
@@ -40,7 +40,7 @@ Bagian About{
 
 Bagian Contact {
 
-    Time: 1648786395814 => menampilkan waktu dari 1 Januari 1970 s/d sekarang dengan detik(second)
+    Time: 1648786395814 => menampilkan waktu dari 1 Januari 1970 s/d saat website dijalankan dengan detik(second)
     
     GET /contact 304 7.301 ms - -
         1. GET merupakan method yang mengambil data dari URL 
