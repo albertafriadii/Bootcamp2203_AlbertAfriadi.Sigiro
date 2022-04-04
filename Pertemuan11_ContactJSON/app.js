@@ -37,6 +37,7 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {    // routing page
     
+    // mengambil data json
     cont = loadContact();
     
     const author = "Albert Afriadi Sigiro"
