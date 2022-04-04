@@ -1,0 +1,25 @@
+<h2>Contact List</h2>
+<% if (cont.length > 0) { %>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover table-light">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <% cont.forEach((cont, i) => { %>
+                <td><%= i + 1 %></td>
+                <td><%= cont.name %></td>
+                <td><%= cont.email %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+<% } else { %>
+    <p>No contact uploaded</p>
+<% } %> 
