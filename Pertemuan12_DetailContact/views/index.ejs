@@ -1,0 +1,30 @@
+<h1>Web Sever Node.Js</h1>
+<p>Welcome to my page <%= author %> </p> <!-- menampilkan variabel -->
+
+<h2>Contact List</h2>
+<% if (cont.length > 0) { %>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover table-light">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Nomor HP</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <% cont.forEach((cont, i) => { %>
+                <td><%= i + 1 %></td>
+                <td><%= cont.name %></td>
+                <td><%= cont.mobile %></td>
+                <td><a href="/detail/<%= cont.name %>" button type= button class="btn btn-primary">Detail</a></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+<% } else { %>
+    <p>No contact uploaded</p>
+<% } %> 

@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+img:hover {
+    transform: scale(0.8);
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+    padding-left: 30px;
+}
+
+li{
+    list-style-type: none;
+    text-align: left;
+}
