@@ -1,0 +1,45 @@
+const fs = require('fs');
+
+// function untuk load
+const loadContact = () => {
+    // membaca file
+    const file = fs.readFileSync('data/contacts.json','utf8');
+
+    // membaca file JSON
+    const contacts = JSON.parse(file);
+
+    return contacts;
+}
+// function untuk tambah data contact
+const saveContact = (name, email, mobile) => {
+    
+    const contact = {name, email, mobile}
+
+    // mengecek folder
+    const dirPath = './data';
+        if (!fs.existsSync(dirPath)) {
+            fs.mkdirSync(dirPath);
+            console.log('Folder tidak ditemukan');
+        }
+
+    // membuat folder / file jika belum ada
+    const dataPath = './data/contacts.json';
+        if (!fs.existsSync(dataPath)) {
+            fs.writeFileSync(dataPath, '[]', 'utf-8');
+        }
+
+    const contacts = loadContact()
+    contacts.push(contact)
+    fs.writeFileSync('data/contacts.json', JSON.stringify(contacts));
+}
+
+// function untuk detail data contact
+const detailContact = (name) => {
+    const contacts = loadContact();
+    const detail = contacts.find((contact) => contact.name === name);
+    return detail
+}
+
+
+// membuat export beberapa fungsi ke app.js
+module.exports = {loadContact , detailContact, saveContact};

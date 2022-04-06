@@ -1,0 +1,56 @@
+Bagian Home {
+
+    Time: 1648786380305 => menampilkan waktu dari 1 Januari 1970 s/d saat website dijalankan dengan satuan detik(second)
+
+    GET / 304 3.197 ms - -
+        1. GET merupakan method yang mengambil data dari URL 
+        2. / adalah mengakses url yang diambil dengan direktori root berisi file indeks.html
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi 
+        4. 3.197 ms adalah indikasi waktu selama durasi loading website
+
+    GET /public/style.css 304 4.410 ms - -
+        1. GET merupakan method yang mengambil data dari URL
+        2. /public/style.css adalah mengakses file css bernama style.css didalam direktori public
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi
+        4. 4.410 ms adalah indikasi waktu selama durasi loading website
+}
+
+Bagian About{
+
+    Time: 1648786392189 => menampilkan waktu dari 1 Januari 1970 s/d saat website dijalankan dengan satuan detik(second)
+    
+    GET /about/ 304 6.455 ms - -
+        1. GET merupakan method yang mengambil data dari URL 
+        2. /about/ adalah mengakses url yang berisi file about.html
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi 
+        4. 6.455 ms adalah indikasi waktu selama durasi loading website
+
+    GET /public/style.css 304 2.220 ms - -
+        1. GET merupakan method yang mengambil data dari URL 
+        2. /public/style.css adalah mengakses file css bernama style.css didalam direktori public
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi 
+        4. 2.220 ms adalah indikasi waktu selama durasi loading website
+    
+    GET /public/img/me.jpeg 304 0.630 ms - -
+        1. GET merupakan method yang mengambil data dari URL 
+        2. /public/img.jpeg adalah mengakses file foto bernama me.jpeg didalam direktori img dan public
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi 
+        4. 0.630 ms adalah indikasi waktu selama durasi loading website
+}
+
+Bagian Contact {
+
+    Time: 1648786395814 => menampilkan waktu dari 1 Januari 1970 s/d saat website dijalankan dengan satuan detik(second)
+    
+    GET /contact 304 7.301 ms - -
+        1. GET merupakan method yang mengambil data dari URL 
+        2. /contact adalah mengakses url yang berisi file contact.html
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi 
+        4. 7.301 ms adalah indikasi waktu selama durasi loading website
+    
+    GET /public/style.css 304 1.400 ms - -
+        1. GET merupakan method yang mengambil data dari URL 
+        2. /public/style.css adalah mengakses file css bernama style.css didalam direktori public
+        3. 304 adalah kode status pesan HTTP response yang dimana tidak ada perubahan atau modifikasi 
+        4. 1.400 ms adalah indikasi waktu selama durasi loading website
+}
