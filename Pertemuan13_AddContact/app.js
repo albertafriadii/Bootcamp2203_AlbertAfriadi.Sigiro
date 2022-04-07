@@ -8,6 +8,8 @@ const contacts = require('./views/contacts'); // call contacts.js
 
 app.use(morgan('dev'))
 
+app.use(express.urlencoded({extended: true}))
+
 // informasi menggunakan ejs
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
@@ -67,8 +69,9 @@ app.get('/addContact', (req, res) => {
 })
 
 app.post('/contact', (req, res) => {
-    contacts.saveContact(req.body)
+    contacts.addContact(req.body)
     res.redirect('/contact')
+    // console.log(req.body)
 })
 
 app.use('/', (req, res) => {    // routing page
