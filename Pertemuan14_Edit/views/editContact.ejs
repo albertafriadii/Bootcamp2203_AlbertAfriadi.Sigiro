@@ -1,0 +1,29 @@
+<h2>Edit Data</h2>
+<% if (typeof errors != 'undefined') { %>
+	<div class="alert alert-danger col-md-4 mb-3">
+	  <ul>
+		<% errors.forEach(error => { %>
+		  <li> <%= error.msg %> </li>
+		<% }) %>
+	  </ul>
+	</div>
+   <% } %>
+<form action="/contact/edit" method="post">
+	<div class="form-row">
+        <input type="hidden" name="oldData" value="<%= det.oldData || det.name %> ">
+		<div class="form-group col-md-4">
+			<label for="nama">Nama</label>
+			<input type="text" class="form-control" value="<%= det.name %>" name="name">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="email">Email</label>
+			<input type="text" class="form-control" value="<%= det.email %>" name="email">
+		</div>
+        <div class="form-group col-md-4">
+			<label for="mobile">Nomor Hp</label>
+			<input type="text" class="form-control" value="<%= det.mobile %>" name="mobile">
+		</div>
+	</div>
+    <br>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
