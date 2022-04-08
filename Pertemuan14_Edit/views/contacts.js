@@ -59,6 +59,10 @@ const updateContact = (newContact) => {
 
     const findData = contacts.filter((contact) => contact.name !== newContact.oldData)
 
+    // console.log(contact.name)
+    // console.log(newContact.oldData)
+    // console.log(findData)
+    // console.log(newContact)
     delete newContact.oldData
     findData.push(newContact)
     saveContact(findData)
