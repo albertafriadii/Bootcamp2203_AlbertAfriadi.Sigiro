@@ -124,6 +124,20 @@ app.get('/contact/delete/:name', (req,res) => {
     }
 })
 
+app.post('/contact/checkbox', (req,res) => {
+    const { checkboxDelete } = req.body
+
+    if (Array.isArray(checkboxDelete)) {
+        checkboxDelete.forEach(contact => {
+            contacts.deleteContact(contact)
+            res.redirect('/contact')
+        })
+    } else {
+        contacts.deleteContact(contact)
+        res.redirect('/contact')
+    }
+})
+
 app.post('/contact', [
     // validasi cek nama apakah ada yang sama atau tidak
     body('name').custom((value) => {

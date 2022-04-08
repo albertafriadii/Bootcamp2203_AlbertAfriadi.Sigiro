@@ -2,6 +2,8 @@
 
 <a href="/addContact" button type= "button" class="btn btn-secondary">Tambah Data</a>
 
+<form action="/contact/checkbox" method="post">
+
 <% if (cont.length > 0) { %>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover table-light">
@@ -11,6 +13,7 @@
                 <th>Nama</th>
                 <th>Nomor HP</th>
                 <th>Aksi</th>
+                <th>Checkbox</th>
             </tr>
         </thead>
         <tbody>
@@ -22,11 +25,16 @@
                 <td>
                     <a href="/detail/<%= cont.name %>" button type= button class="btn btn-primary">Detail</a>
                 </td>
+                <td>
+                    <input type="checkbox" name="checkboxDelete" value="<%= cont.name %>">
+                </td>
             </tr>
             <% }); %>
         </tbody>
     </table>
 </div>
+<button type="submit" class="btn btn-danger">Delete</button>
+</form>
 <% } else { %>
     <p>No contact uploaded</p>
 <% } %> 
