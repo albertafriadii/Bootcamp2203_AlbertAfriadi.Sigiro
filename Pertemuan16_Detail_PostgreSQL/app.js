@@ -36,6 +36,7 @@ app.get('/list', async(req,res) => {
 // detail data
 app.get('/detail/:name', async(req,res) => {
     
+    // menentukan paramater untuk url
     const name = (req.params.name)
     
     try {
