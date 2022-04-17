@@ -1,0 +1,55 @@
+<a href="/dashboard" button type= "button" class="btn btn-info">Back</a>
+<section class="regForm my-4 mx-5"> 
+    <div class="container">
+        <div class="row content">
+            <div class="col-lg-5">
+                <img src="./public/img/logo.jpeg" class="img-fluid" alt="LOGO">
+            </div>
+            <div class="col-lg-7 px-3 pt-3">
+                <h4 class="signin-text mb-3">Register</h4>
+                <% if (typeof errors != 'undefined') { %>
+                    <div class="alert alert-danger">
+                      <ul>
+                        <% errors.forEach(error => { %>
+                          <li> <%= error.msg %> </li>
+                        <% }) %>
+                      </ul>
+                    </div>
+                   <% } %>
+                <form action="/register" method="post">
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="text" placeholder="Name" class="form-control my-1 p-4" name="name" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="email" placeholder="Email Address" class="form-control my-1 p-4" name="email" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="password" placeholder="********" class="form-control my-1 p-4" name="password" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="password" placeholder="********" class="form-control my-1 p-4" name="password2" >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <p><input type="radio" name="role" value="admin">Admin</p>
+                            <p><input type="radio" name="role" value="user">User</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

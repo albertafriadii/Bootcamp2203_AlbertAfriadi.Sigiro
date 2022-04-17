@@ -1,0 +1,29 @@
+<h2>Edit Users</h2>
+<% if (typeof errors != 'undefined') { %>
+	<div class="alert alert-danger col-md-4 mb-3">
+	  <ul>
+		<% errors.forEach(error => { %>
+		  <li> <%= error.msg %> </li>
+		<% }) %>
+	  </ul>
+	</div>
+   <% } %>
+<form action="/users/update/" method="post">
+	<input type="hidden" name="oldName" value="<%= (users.oldName) ? users.oldName : users.name %>">
+	<div class="form-row">
+		<div class="col-lg-7">
+			<label for="nama">Nama</label>
+			<input type="text" class="form-control" value="<%= users.name %>" name="nama">
+		</div>
+		<div class="col-lg-7">
+			<label for="tipebarang">Email</label>
+			<input type="text" class="form-control" value="<%= users.email %>" name="email">
+		</div>
+        <div class="col-lg-7">
+			<label for="deskripsi">Role</label>
+			<input type="text" class="form-control" value="<%= users.role %>" name="role">
+		</div>
+	</div>
+    <br>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>

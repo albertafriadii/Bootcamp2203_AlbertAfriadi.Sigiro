@@ -1,0 +1,33 @@
+<h2>Edit Data</h2>
+<% if (typeof errors != 'undefined') { %>
+	<div class="alert alert-danger col-md-4 mb-3">
+	  <ul>
+		<% errors.forEach(error => { %>
+		  <li> <%= error.msg %> </li>
+		<% }) %>
+	  </ul>
+	</div>
+   <% } %>
+<form action="/barang/update/" method="post">
+	<input type="hidden" name="oldName" value="<%= (barang.oldName) ? barang.oldName : barang.namabarang %>">
+	<div class="form-row">
+		<div class="col-lg-7">
+			<label for="nama">Nama Barang</label>
+			<input type="text" class="form-control" value="<%= barang.namabarang %>" name="namabarang">
+		</div>
+		<div class="col-lg-7">
+			<label for="tipebarang">Tipe Barang</label>
+			<input type="text" class="form-control" value="<%= barang.tipebarang %>" name="tipebarang">
+		</div>
+        <div class="col-lg-7">
+			<label for="deskripsi">Deskripsi</label>
+			<input type="text" class="form-control" value="<%= barang.deskripsi %>" name="deskripsi">
+		</div>
+		<div class="col-lg-7">
+			<label for="stock">Stok</label>
+			<input type="text" class="form-control" value="<%= barang.stock %>" name="stock">
+		</div>
+	</div>
+    <br>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,39 @@
+<a href="/" button type= "button" class="btn btn-info">Home</a>
+<section class="loginForm my-4 mx-5">
+    <div class="container">
+        <div class="row content">
+            <div class="col-lg-5">
+                <img src="./public/img/logo.jpeg" class="img-fluid" alt="LOGO">
+            </div>
+            <div class="col-lg-7 px-3 pt-3">
+                <h1 class="font-weight-bold py-3">MINI PROJECT</h1>
+                <h4 class="signin-text mb-3">Login</h4>
+                <ul>
+                    <% if(messages.error){ %>
+                        <li>
+                            <%= messages.error %> 
+                        </li>
+                    <% } %> 
+                </ul>
+                <form action="/login" method="post">
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="email" placeholder="Email Address" class="form-control my-3 p-4" name="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="password" placeholder="********" class="form-control" name="password">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+                    <a href="">Forget password</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

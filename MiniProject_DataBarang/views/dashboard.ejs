@@ -1,0 +1,95 @@
+<%- include('./layouts/navbar.ejs')  %>
+
+<ul>
+    <% if(messages.success_msg) { %>
+        <li>
+            <%= messages.success_msg %> 
+        </li>
+    <% } %> 
+</ul>
+
+<h1>Hello <%= user %> </h1>
+<br><br>
+<section class="featured" id="featured">
+    <h1 class="heading"> <span> Produk Untuk Gamers </span> </h1>
+    <div class="swiper featured-slider">
+       <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="../public/img/rogzephyrus.png" alt="ROG Zepyhrus">
+                <div class="content cnt">
+                    <h3>ROG Zepyhrus</h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="../public/img/divipard.jpg" alt="Divipard">
+                <div class="content cnt">
+                    <h3>Divipard</h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="../public/img/razerdeathadder.png" alt="Razer Deathadder">
+                <div class="content cnt">
+                    <h3>Razer DeathHadder Essential</h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="../public/img/blackshark.png" alt="Black Shark 4 Pro">
+                <div class="content cnt">
+                    <h3>Black Shark 4 Pro</h3>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="../public/img/rogphone.png" alt="ROG Phone 5s Pro">
+                <div class="content cnt">
+                    <h3>ROG Phone 5s Pro</h3>
+                </div>
+            </div>
+       </div>
+       <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+
+             <div class="swiper-slide box">
+                 <img src="../public/img/redmagic.png" alt="Red Magic 6">
+                 <div class="content cnt">
+                     <h3>Red Magic 6</h3>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="../public/img/msititan.png" alt="MSI Titan GT76">
+                 <div class="content cnt">
+                     <h3>MSI Titan GT76</h3>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="../public/img/acerpredator.jpg" alt="Acer Predator Hellos 300">
+                 <div class="content cnt">
+                     <h3>Acer Predator Hellos 300</h3>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="../public/img/logitech.png" alt="Logitech G402 Hyperion Fury">
+                 <div class="content cnt">
+                     <h3>Logitech G402 Hyperion Fury</h3>
+                 </div>
+             </div>
+
+             <div class="swiper-slide box">
+                <img src="../public/img/logitechpro.jpg" alt="Logitech Pro X">
+                <div class="content cnt">
+                    <h3>Logitech Pro X</h3>                
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>

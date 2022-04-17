@@ -1,0 +1,197 @@
+2022-04-17T06:53:45.764Z - [INFO   ] - App listening on port 3000
+2022-04-17T06:54:35.689Z - [INFO ] - App listening on port 3000
+2022-04-17T06:55:07.145Z - [INFO ] - App listening on port 3000
+2022-04-17T06:56:04.981Z - [INFO ] - App listening on port 3000
+2022-04-17T07:03:32.190Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:03:52.975Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:04:12.077Z - [INFO ] - Membuat user baru
+2022-04-17T07:04:12.086Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:06:20.733Z - [INFO ] - App listening on port 3000
+2022-04-17T07:06:29.856Z - [INFO ] - App listening on port 3000
+2022-04-17T07:06:37.633Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:06:44.135Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:06:48.368Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:07:24.234Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:07:26.826Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:07:26.826Z - [ERROR] - Mengisi form password register kurang dari 8 karakter
+2022-04-17T07:08:16.460Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:08:16.461Z - [ERROR] - Mengisi form password register kurang dari 8 karakter
+2022-04-17T07:08:52.746Z - [INFO ] - App listening on port 3000
+2022-04-17T07:08:54.450Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:08:54.450Z - [ERROR] - Mengisi form password register kurang dari 8 karakter
+2022-04-17T07:09:01.396Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:09:01.397Z - [ERROR] - Mengisi form password register kurang dari 8 karakter
+2022-04-17T07:10:51.479Z - [INFO ] - App listening on port 3000
+2022-04-17T07:10:56.194Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:11:02.936Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:11:25.108Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:11:53.046Z - [INFO ] - Membuat user baru
+2022-04-17T07:11:53.055Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:12:14.121Z - [INFO ] - App listening on port 3000
+2022-04-17T07:12:23.579Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:12:30.426Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:12:32.825Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:13:29.481Z - [INFO ] - App listening on port 3000
+2022-04-17T07:13:41.838Z - [INFO ] - App listening on port 3000
+2022-04-17T07:16:33.423Z - [INFO ] - App listening on port 3000
+2022-04-17T07:16:38.603Z - [INFO ] - Mengakses halaman home
+2022-04-17T07:16:44.739Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:16:51.211Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:16:58.119Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:20:20.150Z - [INFO ] - App listening on port 3000
+2022-04-17T07:20:25.821Z - [INFO ] - Mengakses halaman home
+2022-04-17T07:20:29.030Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:20:47.972Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:20:48.745Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:21:27.660Z - [INFO ] - App listening on port 3000
+2022-04-17T07:21:43.235Z - [INFO ] - Mengakses halaman home
+2022-04-17T07:21:44.910Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:21:50.656Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:21:52.123Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:23:35.240Z - [INFO ] - App listening on port 3000
+2022-04-17T07:23:43.166Z - [INFO ] - Mengakses halaman home
+2022-04-17T07:23:44.327Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:23:50.554Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:23:51.946Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:25:12.948Z - [INFO ] - App listening on port 3000
+2022-04-17T07:25:17.133Z - [INFO ] - App listening on port 3000
+2022-04-17T07:25:43.855Z - [INFO ] - App listening on port 3000
+2022-04-17T07:26:16.487Z - [INFO ] - App listening on port 3000
+2022-04-17T07:26:23.788Z - [INFO ] - Mengakses halaman home
+2022-04-17T07:26:25.072Z - [INFO ] - Mengakses halaman login
+2022-04-17T07:26:30.641Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:26:54.705Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:27:16.456Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:29:41.422Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:29:49.877Z - [ERROR] - Mengisi form register dengan field kosong
+2022-04-17T07:29:57.879Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T07:29:59.255Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T07:29:59.986Z - [INFO ] - Mengakses halaman register
+2022-04-17T07:30:19.085Z - [ERROR] - Mengisi form password dan confirm password register tidak sama
+2022-04-17T07:39:07.120Z - [ERROR] - Mengisi form password dan confirm password register tidak sama
+2022-04-17T08:32:08.296Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:32:10.840Z - [INFO ] - Mengakses halaman home
+2022-04-17T08:32:13.708Z - [INFO ] - Mengakses halaman login
+2022-04-17T08:32:19.259Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T08:32:23.096Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:32:47.611Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:32:53.259Z - [INFO ] - Mengakses halaman login
+2022-04-17T08:32:58.848Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T08:33:01.037Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:34:27.893Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:34:28.480Z - [INFO ] - Mengakses halaman login
+2022-04-17T08:34:36.565Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T08:34:37.964Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:34:59.610Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:35:02.728Z - [INFO ] - Melihat detail data
+2022-04-17T08:35:06.701Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:35:13.322Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:37:37.130Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:37:38.261Z - [INFO ] - Mengakses halaman about us
+2022-04-17T08:37:40.690Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T08:53:44.288Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:53:49.469Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:53:57.963Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:54:19.229Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:54:32.820Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:55:35.180Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:57:31.019Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:57:37.507Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:57:48.158Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:57:52.961Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:58:44.502Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:58:50.597Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:59:04.878Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T08:59:11.784Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:00:19.117Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:01:28.528Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:01:36.345Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:02:49.030Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:04:06.863Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:04:21.021Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:04:25.830Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:04:39.475Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:04:45.806Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:04:49.287Z - [INFO ] - Mengakses halaman data Users
+2022-04-17T09:05:26.715Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:06:01.184Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:06:05.954Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:06:52.902Z - [INFO ] - Mengakses halaman data Users
+2022-04-17T09:08:15.629Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:08:48.852Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:08:53.591Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:09:09.825Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:09:40.631Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:11:52.467Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:12:19.399Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:12:20.105Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:12:27.653Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:16:22.611Z - [INFO ] - Mengakses halaman home
+2022-04-17T09:36:22.603Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:36:59.771Z - [INFO ] - Mengakses halaman home
+2022-04-17T09:37:01.222Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:37:07.336Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:37:17.371Z - [WARN ] - Tidak Punya Akses!
+2022-04-17T09:37:17.383Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:37:22.917Z - [INFO ] - Logout
+2022-04-17T09:37:22.926Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:37:28.811Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:37:33.680Z - [INFO ] - Mengakses halaman data Users
+2022-04-17T09:37:38.486Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:37:40.300Z - [INFO ] - Mengakses halaman data Users
+2022-04-17T09:37:41.236Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T09:37:41.963Z - [INFO ] - Mengakses halaman register
+2022-04-17T09:37:43.027Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:37:44.179Z - [INFO ] - Mengakses halaman register
+2022-04-17T09:37:45.781Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:37:46.813Z - [INFO ] - Mengakses halaman data Users
+2022-04-17T09:37:47.841Z - [INFO ] - Mengakses halaman register
+2022-04-17T09:37:48.988Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:38:19.189Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:38:20.130Z - [INFO ] - Mengakses halaman register
+2022-04-17T09:40:07.812Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:40:16.638Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:40:27.696Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:40:28.975Z - [INFO ] - Mengakses halaman register
+2022-04-17T09:41:15.189Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:41:22.238Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:41:31.549Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:41:33.080Z - [INFO ] - Mengakses halaman register
+2022-04-17T09:41:34.629Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:41:58.633Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:42:01.673Z - [INFO ] - Logout
+2022-04-17T09:42:16.491Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:42:21.345Z - [INFO ] - Mengakses halaman home
+2022-04-17T09:42:27.693Z - [INFO ] - App listening on port http://localhost:8080
+2022-04-17T09:42:30.642Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:42:35.562Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T09:42:36.522Z - [INFO ] - Logout
+2022-04-17T09:42:36.533Z - [INFO ] - Mengakses halaman home
+2022-04-17T09:43:59.499Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:44:00.786Z - [INFO ] - Mengakses halaman home
+2022-04-17T09:44:01.833Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:44:02.866Z - [INFO ] - Mengakses halaman home
+2022-04-17T09:44:06.505Z - [INFO ] - Mengakses halaman login
+2022-04-17T09:44:07.616Z - [INFO ] - Mengakses halaman home
+2022-04-17T10:13:54.267Z - [INFO ] - Mengakses halaman login
+2022-04-17T10:14:00.205Z - [INFO ] - Mengakses halaman login
+2022-04-17T10:14:08.659Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T10:14:42.943Z - [INFO ] - Mengakses halaman register
+2022-04-17T10:14:44.432Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T10:14:45.658Z - [INFO ] - Mengakses halaman data Users
+2022-04-17T10:14:47.466Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T10:14:51.167Z - [INFO ] - Mengakses halaman detail barang
+2022-04-17T10:14:51.168Z - [INFO ] - Melihat detail data
+2022-04-17T10:14:53.229Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T10:14:55.909Z - [INFO ] - Mengakses halaman detail barang
+2022-04-17T10:14:55.910Z - [INFO ] - Melihat detail data
+2022-04-17T10:14:57.694Z - [INFO ] - Mengakses halaman data barang
+2022-04-17T10:14:59.072Z - [INFO ] - Mengakses halaman about us
+2022-04-17T10:14:59.997Z - [INFO ] - Mengakses halaman dashboard
+2022-04-17T11:46:42.545Z - [INFO ] - Logout
+2022-04-17T11:46:42.577Z - [INFO ] - Mengakses halaman home
+2022-04-17T13:21:26.137Z - [INFO ] - App listening on port http://localhost:3000
+2022-04-17T13:21:29.530Z - [INFO ] - Mengakses halaman home
+2022-04-17T13:21:38.397Z - [INFO ] - Mengakses halaman home
+2022-04-17T13:21:42.237Z - [INFO ] - Mengakses halaman login
+2022-04-17T13:21:43.884Z - [INFO ] - Mengakses halaman home

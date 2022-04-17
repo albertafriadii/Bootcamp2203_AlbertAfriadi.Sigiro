@@ -1,0 +1,37 @@
+<%- include('./layouts/navbar.ejs')  %>
+
+<h2>List Barang</h2>
+
+<a href="/addBarang" button type= "button" class="btn btn-secondary">Tambah Data</a>
+
+<% if (barang.length > 0) { %>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover table-light">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama Barang</th>
+                <th>Tipe Barang</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+            <% barang.forEach((barang, i) => { %>
+                <td><%= i + 1 %></td>
+                <td><%= barang.namabarang %></td>
+                <td><%= barang.tipebarang %></td>
+                <td>
+                    <a href="/detailBarang/<%= barang.idbarang %>" button type= button class="btn btn-primary">Detail</a>
+                    <a href="/barang/update/<%= barang.idbarang %>" button type= button class="btn btn-warning">Edit</a>
+                    <a href="/barang/delete/<%= barang.idbarang %>" button type= button class="btn btn-danger" onclick="return confirm('Kamu sudah yakin mau hapus data?')">Delete</a>
+                </td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+</form>
+<% } else { %>
+    <p>Tidak ada data barang</p>
+<% } %> 

@@ -1,0 +1,32 @@
+<h2>Tambah Data</h2>
+<% if (typeof errors != 'undefined') { %>
+	<div class="alert alert-danger col-md-4 mb-3">
+	  <ul>
+		<% errors.forEach(error => { %>
+		  <li> <%= error.msg %> </li>
+		<% }) %>
+	  </ul>
+	</div>
+   <% } %>
+<form action="/barang" method="post">
+	<div class="form-row">
+		<div class="col-lg-7">
+			<label for="namabarang">Nama Barang</label>
+			<input type="text" class="form-control" placeholder="Nama Barang" name="namabarang" required>
+		</div>
+		<div class="col-lg-7">
+			<label for="tipebarang">Tipe Barang</label>
+			<input type="text" class="form-control" placeholder="Tipe Barang" name="tipebarang" required>
+		</div>
+        <div class="col-lg-7">
+			<label for="deskripsi">Deskripsi</label>
+			<input type="text" class="form-control" placeholder="Deskripsi" name="deskripsi" required>
+		</div>
+		<div class="col-lg-7">
+			<label for="stock">Stok</label>
+			<input type="text" class="form-control" placeholder="Stok" name="stock" required>
+		</div>
+	</div>
+    <br>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
