@@ -170,3 +170,13 @@ li{
 .container-home .content-home .btn-info:hover{
     letter-spacing: 4px;
 }
+
+.images{
+    display: flex;
+}
+
+.detailGambar{
+    display: block;
+    align-items: center;
+    width: 50%;
+}

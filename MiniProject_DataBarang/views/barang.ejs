@@ -23,8 +23,10 @@
                 <td><%= barang.tipebarang %></td>
                 <td>
                     <a href="/detailBarang/<%= barang.idbarang %>" button type= button class="btn btn-primary">Detail</a>
-                    <a href="/barang/update/<%= barang.idbarang %>" button type= button class="btn btn-warning">Edit</a>
-                    <a href="/barang/delete/<%= barang.idbarang %>" button type= button class="btn btn-danger" onclick="return confirm('Kamu sudah yakin mau hapus data?')">Delete</a>
+                    <% if((role=="admin" ) || (role=="superadmin" )) {%>
+                        <a href="/barang/update/<%= barang.idbarang %>" button type= button class="btn btn-warning">Edit</a>
+                        <a href="/barang/delete/<%= barang.idbarang %>" button type= button class="btn btn-danger" onclick="return confirm('Kamu sudah yakin mau hapus data?')">Delete</a>
+                    <% } %> 
                 </td>
             </tr>
             <% }); %>

@@ -1,6 +1,9 @@
 const express = require('express') //module express
 const expressLayouts = require('express-ejs-layouts') //module express layouts
 const path = require('path')    // module path
+const fs = require('fs') // module fs
+const morgan = require('morgan') //module morgan
+const multer = require('multer')
 
 const app = express() // memanggil fungsi express
 const port = 3000 // port untuk server
@@ -38,6 +41,26 @@ app.use(passport.session())
 
 // Setup flash
 app.use(flash())
+
+// morgan log
+const logStream = fs.createWriteStream(path.join(__dirname, 'akses.log'), {
+    flags: 'a'
+})
+
+const fileImageStorage = multer.diskStorage({
+    destination: (req, file, callback) => {
+        callback(null, './public/gambarBarang')
+    },
+    filename: (req, file, callback) => {
+        callback(null, Date.now() + '-' + file.originalname)
+    }
+})
+
+const uploadGambar = multer({
+    storage: fileImageStorage
+})
+
+app.use(morgan(':method :url :status :remote-user :date', { stream: logStream }))
 
 // halaman index
 app.get('/', (req, res) => {
@@ -166,23 +189,18 @@ app.get('/about', checkNotAuthenticated, async(req, res) => {
 // halaman barang
 app.get('/barang', checkNotAuthenticated, async(req,res) => {
     const role = req.user.role
-    if((role == "admin") || (role == "superadmin")) {
-        try{
-            const listBarang = await pool.query('SELECT * FROM barang')
-            // res.json(listbarang.rows)
-            res.render('barang', {
-                title: "Barang",
-                barang: listBarang.rows,
-                listBarang,
-                role,
-            })
-            logger.info('Mengakses halaman data barang')
-        } catch (err){
-            console.error(err.message)
-        }
-    } else {
-        logger.warn('Tidak Punya Akses!')
-        res.redirect('/dashboard')
+    try{
+        const listBarang = await pool.query('SELECT * FROM barang')
+        // res.json(listbarang.rows)
+        res.render('barang', {
+            title: "Barang",
+            barang: listBarang.rows,
+            listBarang,
+            role,
+        })
+        logger.info('Mengakses halaman data barang')
+    } catch (err){
+        console.error(err.message)
     }
 })
 
@@ -223,7 +241,7 @@ app.get('/addBarang', checkNotAuthenticated, async(req,res) => {
     }
 })
 
-app.post('/barang', async(req,res) => {
+app.post('/barang', uploadGambar.single('gambarBarang') ,async(req,res) => {
     const errors = []
     if(errors.length > 0){
         res.render('addBarang', {
@@ -232,8 +250,10 @@ app.post('/barang', async(req,res) => {
         })
     } else{
         const {namabarang, tipebarang, deskripsi, stock} = req.body
+        const gambarBarang = req.file.path.replace(/\\/g,'/')
         console.log(req.body)
-        await pool.query(`INSERT INTO barang(namabarang, tipebarang, deskripsi, stock) VALUES($1, $2, $3, $4) RETURNING *`, [namabarang, tipebarang, deskripsi,stock])
+        console.log(gambarBarang)
+        await pool.query(`INSERT INTO barang(namabarang, tipebarang, deskripsi, stock, gambar) VALUES($1, $2, $3, $4, $5) RETURNING *`, [namabarang, tipebarang, deskripsi,stock, gambarBarang])
         res.redirect('/barang')
         logger.info('Menambah data')
     }
@@ -242,7 +262,6 @@ app.post('/barang', async(req,res) => {
 // detail barang
 app.get('/detailBarang/:idbarang', checkNotAuthenticated, async(req,res) => {
     const role = req.user.role
-    if((role == "admin") || (role == "superadmin")) {
         try{
             const idbarang = req.params.idbarang
             const {rows: detailBarang} = await pool.query(`SELECT * FROM barang WHERE idbarang = $1`, [idbarang])
@@ -258,10 +277,6 @@ app.get('/detailBarang/:idbarang', checkNotAuthenticated, async(req,res) => {
         } catch (err){
             console.error(err.message)
         }
-    } else{
-        logger.warn('Tidak Punya Akses!')
-        res.redirect('/dashboard')
-    }
 })
 
 // delete barang
