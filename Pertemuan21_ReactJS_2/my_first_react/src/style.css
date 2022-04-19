@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+}
+
+.nav-items{
+    display: block;
+    padding-left: 35%;
+    margin-top: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
